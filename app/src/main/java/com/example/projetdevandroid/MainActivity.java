@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 replaceFragment(new HomeFragment());
             }
             else if (id == R.id.nav_geolocate) {
-                replaceFragment(new GeolocateFragment());
+                replaceFragment(new MapsFragment());
             }
             //else if (id == R.id.nav_camera) {
             //    replaceFragment(new CameraFragment());
