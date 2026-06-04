@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProjetDevAndroid</string>
+    <string name="tool_bar_label">Mon application</string>
+    <string name="open_drawer">Ouvrir menu</string>
+    <string name="close_drawer">fermer menu</string>
+    <string name="accueil">Accueil</string>
+    <string name="carte">Carte</string>
+    <string name="camera">Caméra</string>
+    <string name="parametres">Paramètres</string>
+    <string name="drawer_open">ouvrir menu</string>
+    <string name="drawer_close">fermer menu</string>
+    <string name="geolocate">geolocalisation</string>
+</resources>
