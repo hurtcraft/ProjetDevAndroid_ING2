@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
             else if (id == R.id.nav_geolocate) {
                 replaceFragment(new MapsFragment());
             }
-            //else if (id == R.id.nav_camera) {
-            //    replaceFragment(new CameraFragment());
-            //}
+            else if (id == R.id.nav_camera) {
+                replaceFragment(new CameraFragment());
+            }
             //else if (id == R.id.nav_settings) {
             //    replaceFragment(new SettingsFragment());
             //}

@@ -9,5 +9,8 @@
     <string name="parametres">Paramètres</string>
     <string name="drawer_open">ouvrir menu</string>
     <string name="drawer_close">fermer menu</string>
-    <string name="geolocate">geolocalisation</string>
+    <string name="geolocate">Geolocalisation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo">Photo</string>
 </resources>
