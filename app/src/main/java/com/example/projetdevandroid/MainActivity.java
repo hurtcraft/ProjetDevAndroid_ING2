@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (id == R.id.nav_camera) {
                 replaceFragment(new CameraFragment());
+            } else if (id == R.id.nav_person) {
+                replaceFragment(new PeopleFragment());
+                
             }
             //else if (id == R.id.nav_settings) {
             //    replaceFragment(new SettingsFragment());

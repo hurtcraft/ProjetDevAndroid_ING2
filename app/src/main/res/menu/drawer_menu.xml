@@ -16,4 +16,8 @@
         android:id="@+id/nav_settings"
         android:title="@string/parametres"/>
 
+    <item
+        android:id="@+id/nav_person"
+        android:title="@string/SQLite"/>
+
 </menu>
