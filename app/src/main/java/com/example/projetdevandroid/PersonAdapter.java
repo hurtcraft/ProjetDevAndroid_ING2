@@ -5,17 +5,17 @@ import android.view.*;
 import android.widget.*;
 
 import com.example.projetdevandroid.Dao.PersonDao;
-import com.example.projetdevandroid.entity.Person;
+import com.example.projetdevandroid.entity.PersonEntity;
 
 import java.util.List;
 
 public class PersonAdapter extends BaseAdapter {
 
     private Context context;
-    private List<Person> list;
+    private List<PersonEntity> list;
     private PersonDao dao;
 
-    public PersonAdapter(Context context, List<Person> list, PersonDao dao) {
+    public PersonAdapter(Context context, List<PersonEntity> list, PersonDao dao) {
         this.context = context;
         this.list = list;
         this.dao = dao;
@@ -47,7 +47,7 @@ public class PersonAdapter extends BaseAdapter {
         TextView txt = convertView.findViewById(R.id.txtPerson);
         Button btnDelete = convertView.findViewById(R.id.btnDelete);
 
-        Person p = list.get(position);
+        PersonEntity p = list.get(position);
         txt.setText(p.name + " - " + p.age);
 
         btnDelete.setOnClickListener(v -> {
@@ -59,7 +59,7 @@ public class PersonAdapter extends BaseAdapter {
         return convertView;
     }
 
-    public void update(List<Person> newList) {
+    public void update(List<PersonEntity> newList) {
         list = newList;
         notifyDataSetChanged();
     }

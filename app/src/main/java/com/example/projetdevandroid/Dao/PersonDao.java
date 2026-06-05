@@ -5,7 +5,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.projetdevandroid.entity.Person;
+import com.example.projetdevandroid.entity.PersonEntity;
 
 import java.util.List;
 
@@ -13,11 +13,11 @@ import java.util.List;
 public interface PersonDao {
 
     @Insert
-    void insert(Person person);
-
-    @Query("SELECT * FROM people")
-    List<Person> getAll();
+    void insert(PersonEntity person);
 
     @Delete
-    void delete(Person person);
+    void delete(PersonEntity person);
+
+    @Query("SELECT * FROM people")
+    List<PersonEntity> getAll();
 }

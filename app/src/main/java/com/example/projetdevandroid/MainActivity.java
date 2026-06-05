@@ -20,6 +20,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.FirebaseApp;
+
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         toolbar = findViewById(R.id.toolbar);
         WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
         setSupportActionBar(toolbar);
+
+        FirebaseApp.initializeApp(this);
 
         ActionBarDrawerToggle toggle =
                 new ActionBarDrawerToggle(
