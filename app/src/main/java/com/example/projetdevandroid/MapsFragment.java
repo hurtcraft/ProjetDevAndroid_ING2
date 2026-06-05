@@ -114,7 +114,7 @@ public class MapsFragment extends Fragment {
         LocationRequest request = new LocationRequest.Builder(
                 Priority.PRIORITY_HIGH_ACCURACY,
                 3000
-        ).build();
+        ).setMinUpdateDistanceMeters(20).build();
 
         if (ContextCompat.checkSelfPermission(
                 requireContext(),
