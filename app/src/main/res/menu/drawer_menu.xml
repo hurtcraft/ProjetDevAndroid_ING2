@@ -25,4 +25,8 @@
         android:id="@+id/nav_person"
         android:title="@string/SQLite"/>
 
+    <item
+        android:id="@+id/nav_weather"
+        android:title="@string/meteo" />
+
 </menu>

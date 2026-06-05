@@ -19,5 +19,6 @@
     <string name="add">Ajouter</string>
     <string name="change_language">Changer langue</string>
     <string name="choose_language">Choisir une langue</string>
+    <string name="meteo">Meteo</string>
 
 </resources>
