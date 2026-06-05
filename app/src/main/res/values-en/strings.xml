@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidDevProject</string>
+    <string name="tool_bar_label">My Application</string>
+    <string name="open_drawer">Open menu</string>
+    <string name="close_drawer">Close menu</string>
+    <string name="accueil">Home</string>
+    <string name="carte">Map</string>
+    <string name="camera">Camera</string>
+    <string name="parametres">Settings</string>
+    <string name="drawer_open">Open menu</string>
+    <string name="drawer_close">Close menu</string>
+    <string name="geolocate">Geolocation</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="photo">Photo</string>
+    <string name="change_language">Change language</string>
+    <string name="choose_language">Choose a language</string>
+</resources>

@@ -7,8 +7,12 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.LocaleManagerCompat;
+import androidx.core.os.LocaleListCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -54,7 +58,10 @@ public class MainActivity extends AppCompatActivity {
 
             int id = item.getItemId();
 
-            if (id == R.id.nav_home) {
+            if(id==R.id.action_language){
+                showLanguageDialog();
+            }
+            else if (id == R.id.nav_home) {
                 replaceFragment(new HomeFragment());
             }
             else if (id == R.id.nav_geolocate) {
@@ -93,4 +100,28 @@ public class MainActivity extends AppCompatActivity {
                 .replace(R.id.fragmentContainer, fragment)
                 .commit();
     }
+    private void showLanguageDialog() {
+
+        String[] languages = {"Français", "English"};
+
+        new AlertDialog.Builder(this)
+                .setTitle(getString(R.string.choose_language))
+                .setItems(languages, (dialog, which) -> {
+
+                    if (which == 0) {
+                        setLocale("fr");
+                    } else {
+                        setLocale("en");
+                    }
+
+                })
+                .show();
+    }
+    private void setLocale(String languageCode) {
+        AppCompatDelegate.setApplicationLocales(
+                LocaleListCompat.forLanguageTags(languageCode)
+        );
+    }
+
+
 }

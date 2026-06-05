@@ -10,7 +10,6 @@
     <string name="drawer_open">ouvrir menu</string>
     <string name="drawer_close">fermer menu</string>
     <string name="geolocate">Geolocalisation</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="photo">Photo</string>
     <string name="SQLite">SQLite</string>
@@ -18,5 +17,7 @@
     <string name="name">Nom</string>
     <string name="age">Âge</string>
     <string name="add">Ajouter</string>
-    <string name="cancel">Annuler</string>
+    <string name="change_language">Changer langue</string>
+    <string name="choose_language">Choisir une langue</string>
+
 </resources>
