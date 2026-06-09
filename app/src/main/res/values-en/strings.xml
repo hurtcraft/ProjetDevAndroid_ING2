@@ -15,4 +15,10 @@
     <string name="photo">Photo</string>
     <string name="change_language">Change language</string>
     <string name="choose_language">Choose a language</string>
+    <string name="SQLite">SQLite</string>
+    <string name="add_person">Add a Person</string>
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="add">Add</string>
+    <string name="meteo">Meteo</string>
 </resources>
