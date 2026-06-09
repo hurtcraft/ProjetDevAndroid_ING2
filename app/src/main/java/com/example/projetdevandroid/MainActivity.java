@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
                 replaceFragment(new PeopleFragment());
                 
             }
+            else if (id == R.id.nav_external_bd) {
+                replaceFragment(new ExternalBDFragment());
+            }
             //else if (id == R.id.nav_settings) {
             //    replaceFragment(new SettingsFragment());
             //}
