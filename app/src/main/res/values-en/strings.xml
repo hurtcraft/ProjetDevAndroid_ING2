@@ -15,4 +15,6 @@
     <string name="photo">Photo</string>
     <string name="change_language">Change language</string>
     <string name="choose_language">Choose a language</string>
+    <string name="cancel">Cancel</string>
+    <string name="extrenalBD">External BD</string>
 </resources>
