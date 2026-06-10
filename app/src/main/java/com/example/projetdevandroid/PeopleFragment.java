@@ -82,7 +82,7 @@ public class PeopleFragment extends Fragment {
                         loadData();
                     }
                 })
-                .setNegativeButton(R.string.cancel, null)
+                .setNegativeButton("no", null)
                 .show();
     }
 }

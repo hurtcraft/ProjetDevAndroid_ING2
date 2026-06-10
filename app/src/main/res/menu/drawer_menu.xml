@@ -24,7 +24,13 @@
         android:title="@string/SQLite"/>
 
     <item
+
+        android:id="@+id/nav_weather"
+        android:title="@string/meteo" />
+  
+    <item
         android:id="@+id/nav_external_bd"
         android:title="@string/extrenalBD"/>
+
 
 </menu>
