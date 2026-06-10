@@ -73,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
                 replaceFragment(new PeopleFragment());
                 
             }
-            if (item.getItemId() == R.id.nav_weather) {
+            else if (item.getItemId() == R.id.nav_weather) {
                 replaceFragment(new WeatherFragment());
-
+            }
             else if (id == R.id.nav_external_bd) {
                 replaceFragment(new ExternalBDFragment());
             }
