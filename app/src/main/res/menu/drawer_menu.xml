@@ -13,9 +13,7 @@
         android:id="@+id/nav_camera"
         android:title="@string/camera"/>
 
-    <item
-        android:id="@+id/nav_settings"
-        android:title="@string/parametres"/>
+
     <item
         android:id="@+id/action_language"
         android:title="@string/change_language"
