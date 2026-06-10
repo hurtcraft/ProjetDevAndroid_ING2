@@ -21,4 +21,6 @@
     <string name="age">Age</string>
     <string name="add">Add</string>
     <string name="meteo">Meteo</string>
+    <string name="cancel">Cancel</string>
+    <string name="extrenalBD">External BD</string>
 </resources>
