@@ -53,8 +53,8 @@ public class MapsFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_maps, container, false);
-        latitude = view.findViewById(R.id.longitude);
-        longitude = view.findViewById(R.id.latitude);
+        longitude = view.findViewById(R.id.longitude);
+        latitude = view.findViewById(R.id.latitude);
         adresse=view.findViewById(R.id.adresse);
         loadingView = view.findViewById(R.id.loading_map);
         if (loadingView != null) {
@@ -76,9 +76,7 @@ public class MapsFragment extends Fragment {
         mapView.setMultiTouchControls(true);
         mapView.setUseDataConnection(true);
         mapView.setTilesScaledToDpi(true);
-
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity());
-
         setupPermissionLauncher();
         checkPermissionOrStart();
 
