@@ -204,15 +204,30 @@ public class MapsFragment extends Fragment {
 
         return "Adresse inconnue";
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+
+        if (fusedLocationClient != null) {
+            fusedLocationClient.removeLocationUpdates(locationCallback);
+        }
+    }
     @Override
     public void onResume() {
         super.onResume();
         mapView.onResume();
+        checkPermissionOrStart();
     }
 
     @Override
     public void onPause() {
         super.onPause();
+
         mapView.onPause();
+
+        if (fusedLocationClient != null) {
+            fusedLocationClient.removeLocationUpdates(locationCallback);
+        }
     }
 }

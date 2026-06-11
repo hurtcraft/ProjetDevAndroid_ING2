@@ -46,7 +46,6 @@ public class WeatherFragment extends Fragment {
         new Thread(() -> {
             try {
 
-                // 1️⃣ GET LAT/LON FROM CITY
                 String geoUrlStr =
                         "https://geocoding-api.open-meteo.com/v1/search?name="
                                 + city + "&count=1";
@@ -80,7 +79,6 @@ public class WeatherFragment extends Fragment {
                 double lat = first.getDouble("latitude");
                 double lon = first.getDouble("longitude");
 
-                // 2️⃣ GET WEATHER
                 String weatherUrlStr =
                         "https://api.open-meteo.com/v1/forecast?latitude="
                                 + lat + "&longitude=" + lon
@@ -107,8 +105,7 @@ public class WeatherFragment extends Fragment {
 
                 requireActivity().runOnUiThread(() ->
                         txtResult.setText(
-                                "City: " + city +
-                                        "\nTemperature: " + temp + " °C"
+                                "City: " + city + "\nTemperature: " + temp + " °C"
                         ));
 
             } catch (Exception e) {
